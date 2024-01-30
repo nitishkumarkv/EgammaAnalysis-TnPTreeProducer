@@ -108,7 +108,7 @@ if varOptions.GT == "auto":
     if options['era'] == 'UL2018': options['GLOBALTAG'] = '106X_dataRun2_v28'
     #if options['era'] == '2022': options['GLOBALTAG'] = '123X_mcRun3_2021_realistic_v15'
     if options['era'] == '2022': options['GLOBALTAG'] = 'auto:phase1_2022_realistic' #update GT for 2022 from PDMV
-    if options['era'] == '2023': options['GLOBALTAG'] = 'auto:phase1_2023_realistic' #update GT for 2023 from PDMV
+    if options['era'] == '2022': options['GLOBALTAG'] = 'auto:phase1_2023_realistic' #update GT for 2023 from PDMV
   else:
     if options['era'] == '2016':   options['GLOBALTAG'] = '94X_dataRun2_v10'
     if options['era'] == '2017':   options['GLOBALTAG'] = '94X_dataRun2_v11'

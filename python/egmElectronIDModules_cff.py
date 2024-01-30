@@ -47,7 +47,8 @@ def setIDs(process, options):
     process.tagEleCutBasedTight = cms.EDProducer('GsfElectronSelectorByValueMap' if options['useAOD'] else 'PatElectronSelectorByValueMap',
                                                      input     = cms.InputTag("goodElectrons"),
                                                      cut       = cms.string(options['ELECTRON_TAG_CUTS']),
-                                                     selection = cms.InputTag("egmGsfElectronIDs:cutBasedElectronID-Fall17-94X-V2-tight"),
+                                                     #selection = cms.InputTag("egmGsfElectronIDs:cutBasedElectronID-Fall17-94X-V2-tight"),
+                                                     selection = cms.InputTag("egmGsfElectronIDs:cutBasedElectronID-RunIIIWinter22-V1-tight"),
                                                      id_cut    = cms.bool(True)
                                                 )
 
